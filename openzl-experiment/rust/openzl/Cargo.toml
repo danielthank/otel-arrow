@@ -1,0 +1,14 @@
+[package]
+name = "openzl"
+version = "0.1.0"
+edition = "2024"
+authors = ["OpenTelemetry"]
+description = "Safe Rust wrapper for OpenZL compression (CLI-based prototype)"
+license = "Apache-2.0"
+repository = "https://github.com/open-telemetry/otel-arrow"
+rust-version = "1.87.0"
+publish = false
+
+[dependencies]
+openzl-sys = { path = "../openzl-sys" }
+thiserror = "2.0"

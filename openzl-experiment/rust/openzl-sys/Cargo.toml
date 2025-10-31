@@ -1,0 +1,20 @@
+[package]
+name = "openzl-sys"
+version = "0.1.0"
+edition = "2024"
+authors = ["OpenTelemetry"]
+description = "Low-level FFI bindings to Meta's OpenZL compression library"
+license = "Apache-2.0"
+repository = "https://github.com/open-telemetry/otel-arrow"
+rust-version = "1.87.0"
+publish = false
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.72"
+cc = "1.0"
+
+[lib]
+name = "openzl_sys"
+path = "src/lib.rs"
